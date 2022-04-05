@@ -145,7 +145,7 @@ export default function Placeholder({ openModal, setOpenModal, setSelected }) {
           <StyledSuggestions ref={suggestionsRef} onKeyDown={handleKeyDown}>
             {Object.entries(suggestions).map(
               ([key, groupedSuggestions], groupIndex) => (
-                <>
+                <div key={groupIndex}>
                   <h2 style={{ backgroundColor: "blue", color: "white" }}>
                     {key}
                   </h2>
@@ -176,7 +176,7 @@ export default function Placeholder({ openModal, setOpenModal, setSelected }) {
                         </StyledSuggestion>
                       ))}
                   </div>
-                </>
+                </div>
               )
             )}
           </StyledSuggestions>
