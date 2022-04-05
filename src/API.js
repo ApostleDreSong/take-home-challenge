@@ -1,6 +1,6 @@
 import Fuse from 'fuse.js';
 
-const MODELS = [
+export const MODELS = [
   {
     "id": "gpt2",
     "modified": 1621441559000,
